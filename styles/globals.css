@@ -1,3 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .button{
+    @apply h-5 w-5 cursor-pointer hover:scale-125 transition transform duration-100 ease-out;
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +23,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.gradijent{
+  /*background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(rgb(3, 3, 3)), color-stop(0.00000001, #eee));*/
+  background: -webkit-gradient(linear, left top, 0 300, from(rgb(93,93,93)), to(rgb(10, 10, 10)));
 }
